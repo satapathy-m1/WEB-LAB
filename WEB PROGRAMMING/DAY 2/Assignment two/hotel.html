@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel booking</title>
+    <style>
+      .heading {
+        display: flex;
+        justify-content: center;
+      }
+      .footer{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+      }
+      button{
+        background-color: rgb(218, 132, 149);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading"><h1>HOTEL BOOKING FORM</h1></div>
+      <hr />
+      <hr />
+      <div class="ques">
+        <form
+          action="/action_page.php"
+          style="display: flex; justify-content: space-between"
+        >
+          <label for="fname">First name*</label>
+          <input type="text" id="fname" name="fname" />
+          <label for="mname">Middle name</label>
+          <input type="text" id="mname" name="mname" />
+          <label for="lname">Last name*</label>
+          <input type="text" id="lname" name="lname" />
+        </form>
+        <br /><br />
+      </div>
+      <div class="cnt">
+        <form action="/action_page.php" style="display: flex">
+          <label for="fname">Contact Number :- </label>
+          <input type="number" id="fname" name="fname" />
+        </form>
+      </div>
+      <br /><br />
+      <div class="id">
+        <form action="/action_page.php" style="display: flex">
+          <label for="fname">Aadhar Number :-</label>
+          <input type="number" id="fname" name="fname" />
+        </form>
+      </div>
+      <br /><br />
+      <div class="date">
+        <form action="/action_page.php" style="display: flex">
+          <label for="fname">Checkin date :- </label>
+          <input type="date" id="fname" name="fname" />
+        </form>
+      </div>
+      <br /><br />
+      <div class="date">
+        <form action="/action_page.php" style="display: flex">
+          <label for="fname">Checkout date :-</label>
+          <input type="date" id="fname" name="fname" />
+        </form>
+      </div>
+      <br /><br />
+      <div class="date">
+        <form action="/action_page.php" style="display: flex">
+          <label for="pck">Chosen Packages</label>
+          <select name="pck" id="pck">
+            <option value="CSE">Family(2000Rs/- per night)</option>
+            <option value="MCA">Single(1200Rs/- per night)</option>
+            <option value="MTECH">Friends(1600Rs/- per night)</option>
+          </select>
+        </form>
+      </div>
+      <div class="footer">
+        <input type="reset" value="RESET">
+        <button>SUBMIT</button>
+      </div>
+    </div>
+  </body>
+</html>

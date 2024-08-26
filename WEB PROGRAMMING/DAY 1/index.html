@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <!-- <style>
+        body {
+            background-color: rgb(224, 233, 230);
+        }
+    </style> -->
+</head>
+
+<body>
+    <h1 style="text-align: center;">STUDENT REGISTRATION FORM</h1>
+    <div class="container1">
+        <hr>
+        <h4>BASIC INFORMATION</h4>
+        <hr>
+        <div class="name">
+            <form action="/action_page.php"  style="display: flex; justify-content: space-between;">
+                <label for="fname">First name*</label>
+                <input type="text" id="fname" name="fname">
+                <label for="mname">Middle name</label>
+                <input type="text" id="mname" name="mname">
+                <label for="lname">Last name*</label>
+                <input type="text" id="lname" name="lname">
+            </form><br><br>
+        </div>
+        <div class="info">
+            <form>
+                <label for="rno">Roll No.*</label>
+                <input type="number" id="rno" name="rno"><br><br>
+                <label for="EMAIL">Email ID*</label>
+                <input type="email" id="EMAIL" name="EMAIL"><br><br>
+                <label for="PHN">Roll No.*</label>
+                <input type="number" id="PHN" name="PHN"><br><br>
+                <label for="uid">Email ID*</label>
+                <input type="email" id="uid" name="uid"><br><br>
+                <label for="pass">Enter Password : </label>
+                <input type="text" name="pass" id="pass"><br><br>
+                <label for="rep">Re enter Password:</label>
+                <input type="text" name="rep" id="rep"><br><br>
+                <label for="bnc">Branch:</label>
+
+                <select name="bnc" id="bnc">
+                    <option value="CSE">CSE</option>
+                    <option value="MCA">MCA</option>
+                    <option value="MTECH">MTECH</option>
+                    <option value="BTECH">BTECH</option>
+                </select>
+                <label for="yos">Year of Studies:</label>
+                <select name="yos" id="yos">
+                    <option value="first">1</option>
+                    <option value="second">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select><br><br>
+                <label for="upload">Upload Photo:</label>
+                <input type="file" name="upload" id="upload">
+            </form>
+        </div>
+        
+        <div class="details">
+            <hr>
+            <h4>PERSONAL DETAILS</h4>
+            <hr>
+            <label for="fname">Father Name*</label>
+            <input type="text" id="fname">
+            <label for="cno">Contact No*</label>
+            <input type="number" id="cno">
+            <br><br>
+            <label for="mname">Mother Name*</label>
+            <input type="text" id="mname">
+            <label for="cno">Contact No*</label>
+            <input type="number" id="cno">
+            <br><br>
+            <label for="dob"> Date of Birth</label>
+            <input type="date">
+            <label for="aadhar">Aadhar No*</label>
+            <input type="number">
+        </div>
+        <div class="address">
+            <hr>
+            <h4>ADDRESS</h4>
+            <hr>
+            <label for="add"> Address 1*</label>
+            <input type="text"><br><br>
+            <label for="add"> Address 2*</label>
+            <input type="text">
+        </div>
+        <br><br>
+        <div class="submit" style="display: flex; justify-content: center;"> <button style="margin: 2px; height: 30px;" >Register</button>
+        <button style="height:30px;">Reset</button></div>
+       
+    </div>
+</body>
+
+</html>

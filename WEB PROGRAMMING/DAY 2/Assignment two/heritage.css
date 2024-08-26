@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+
+.container{
+   max-height: 100000px;
+    width: 100vw;
+    /* border: 2px solid black; */
+    
+    padding: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cards{
+    margin: 20px;
+    background-color:aliceblue;
+    width: 67%;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px 2px lightblue;
+}
+.cards:hover{
+    transform: scale(1.1);
+}
+   
