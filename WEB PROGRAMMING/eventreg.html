@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: #fceaeac0;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-buttons {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Event Registration</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Student's Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" name="student-id" placeholder="Enter your student ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="" disabled selected>Select an event</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="seminar">Seminar</option>
+                    <option value="conference">Conference</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Mode of Attendance:</label>
+                <input type="radio" id="in-person" name="attendance-mode" value="In-person" required>
+                <label for="in-person">In-person</label>
+                <input type="radio" id="virtual" name="attendance-mode" value="Virtual">
+                <label for="virtual">Virtual</label>
+            </div>
+
+            <div class="form-group">
+                <label>Additional Services:</label>
+                <input type="checkbox" id="accommodation" name="additional-services" value="Accommodation">
+                <label for="accommodation">Accommodation</label>
+                <input type="checkbox" id="transportation" name="additional-services" value="Transportation">
+                <label for="transportation">Transportation</label>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Enter any additional comments here"></textarea>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        h4{
+            text-align: center;
+            color: rgb(160, 113, 204);
+        }
+        .name{
+            display: flex;
+            justify-content: space-between;
+        }
+        /* .firstform{
+            display: flex;
+            justify-content: center;
+        } */
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">STUDENT REGISTRATION FORM</h1>
+    <div class="container1">
+        <hr>
+        <h4>BASIC INFORMATION</h4>
+        <hr>
+        <div class="name">
+            <form action="/action_page.php" class="firstform" style="display: flex; justify-content: space-between;">
+                <div class="fname">
+                    <label for="fname">First name*</label>
+                <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="mname">
+                    <label for="mname">Middle name</label>
+                <input type="text" id="mname" name="mname">
+                </div>
+                <div class="lanme">
+                    <label for="lname">Last name*</label>
+                <input type="text" id="lname" name="lname" required>
+                </div>
+            </form><br><br>
+        </div>
+        <div class="info">
+            <form>
+                <select name="bnc" id="bnc">
+                    <option value="coding">Coding Events</option>
+                    <option value="cultural">Cultural Events</option>
+                    <option value="sportsnothers">Sports and Others</option>
+                    <option value="academic">Academic Upgradation</option>
+                </select>
+            </form>
+        </div>
+        <div class="modeofattendance">
+            <label for="mode">Virtual</label>
+            <input type="radio" name="mode">
+            <label for="mode">In-Person</label>
+            <input type="radio" name="mode">
+        </div>
+        <div class="checkboxes">
+            <label for="checkbox">Accomodation</label>
+            <input type="checkbox" name="checkbox">
+            <label for="checkbox">Transportation</label>
+            <input type="checkbox" name="checkbox">
+            <label for="checkbox">Meals</label>
+            <input type="checkbox" name="checkbox">
+        </div>
+        <div class="comments">
+            <label for="comm">Comments</label>
+            <textarea name="comm" id="comm" cols="30" rows="10" maxlength="200px" required></textarea>
+        </div>
+        <div class="submit" style="display: flex; justify-content: center;"> <button style="margin: 2px; height: 30px;" >Register</button>
+        <button style="height:30px;">Reset</button></div>
+       
+    </div>
+   
+</body>
+</html> -->
